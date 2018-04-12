@@ -7,4 +7,4 @@
 1. ` npm install `
 2. ` npm run start`
 3. 访问 http://localhost:8080
-4. 查看 manifest.json 中的相关设置
+4. 学习和修改 `manifest.json` 中的相关设置
