@@ -14,3 +14,8 @@ Introduction to Progressive Web App (PWA) and key technologies.
 
 * Lesson 3 - Introduction to Service Worker
 
+### Phase 2
+
+Introduce advanced features of PWA
+
+* Lesson 1 - Service worker best practices

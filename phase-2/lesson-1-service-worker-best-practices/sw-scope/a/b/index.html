@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (regs) {
+        for (var reg of regs) {
+          reg.unregister()
+        }
+      })
+      navigator.serviceWorker.register('/a/b/sw.js', {scope: '/a/b/'}).then(function (reg) {
+        console.log('page b\'s scope is: ', reg.scope)
+      })
+    }
+  </script>
+</body>
+</html>
