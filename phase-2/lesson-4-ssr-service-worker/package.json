@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "rimraf dist && cross-env MICRO_CACHE=false node server.js",
-    "start": "npm run dev",
+    "start": "cross-env NODE_ENV=production node server.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "rimraf dist && npm run build:client && npm run build:server",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.conf.js --progress --hide-modules",
@@ -16,7 +16,7 @@
     "compression": "^1.6.2",
     "lru-cache": "^4.1.1",
     "serve-favicon": "^2.4.3",
-    "vue": "^2.5.2",
+    "vue": "^2.5.17",
     "vue-meta": "^1.5.3",
     "vue-router": "^3.0.1",
     "vue-server-renderer": "^2.5.17",

@@ -5,6 +5,7 @@ import Router from 'vue-router'
 let Home = () => import('@/pages/Home.vue')
 let List = () => import('@/pages/List.vue')
 let NotFound = () => import('@/pages/NotFound.vue')
+let Appshell = () => import('@/pages/Appshell.vue')
 
 Vue.use(Router)
 
@@ -31,6 +32,11 @@ export function createRouter () {
         path: '/404',
         name: 'notFound',
         component: NotFound
+      },
+      {
+        path: '/appshell',
+        name: 'appshell',
+        component: Appshell
       }
     ]
   })

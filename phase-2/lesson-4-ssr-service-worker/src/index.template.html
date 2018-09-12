@@ -27,7 +27,7 @@
         .then(() => {
           console.log('service worker registered successfully.')
         })
-        .cache(() => {
+        .catch(() => {
           console.log('service worker registered failed.')
         })
     }
